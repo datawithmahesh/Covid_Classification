@@ -1,7 +1,10 @@
+#this is for covid classification(svm)
 import streamlit as st
 import pandas as pd
 import pickle as pk
 # st.image("https://pianalytix.com/wp-content/uploads/2020/12/Salary-Prediction-Model-using-ML-1024x427.jpg&quot")
+
+st.write("COVID CLASSIFICATION MODEL")
 
 # load model
 load_model= pk.load(open('Covid_Classification.pickle','rb'))
@@ -55,3 +58,7 @@ if st.button("predict"):
       st.write("Congratulations!!, you have negative result")
    else:
      st.write("we are sorry to inform you, you have covid positive, wish you the best health")
+
+
+
+st.write("This model is done by Mahesh Thapa")
